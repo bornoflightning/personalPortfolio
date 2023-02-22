@@ -1,0 +1,242 @@
+:root {
+  --night: #090C08;
+  --english-violet: #474056;
+  --taupe-gray: #757083;
+  --baby-powder: #FFFFFA;
+  --verdigis: #44A1A0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-color: var(--baby-powder);
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+header {
+  height: 12vh;
+  background-color:var(--night);
+  padding-top: -1em;
+  margin-top: -1.5em;
+  display: flex;
+  flex-direction: row;
+  color: var(--baby-powder);
+  text-align: center;
+  align-items: center space;
+  justify-content: space-between;
+}
+
+.headerStuff {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.topName {
+  margin: 1em;
+}
+
+.links{  
+  display: flex;
+  flex-direction: row;
+  margin-right: 2em;
+  margin-top: 1em;
+}
+
+p {
+  margin-left: 1.5em;
+}
+
+.app {
+  margin: auto;
+  width: 70%;
+}
+
+.content {  
+  /* border: solid 1px white; */
+  min-height: calc(85vh - 70px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card {
+  border-radius: 5px;
+  border: solid 2px black;
+  min-width: 16em;
+  height: 100%;
+  margin: 0.5em;
+  box-shadow: 2px 2px 2px 2px var(--english-violet);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--night);
+  backdrop-filter: blur(10px);
+  
+  
+}
+
+.project-card:hover {
+  -webkit-transform: scale(1.25);
+  box-shadow: 0 0 .5rem 0.25rem  var(--verdigis);
+  transform: scale(1.025);
+  transition: 30ms;
+}
+
+
+img {  
+  width: 100%;
+  height: 100%;
+  max-width: 16em;  
+  /* object-fit: cover; */
+  margin-top: 2em;
+  z-index: 0;
+  /* filter: blur(30px); */
+  
+}
+
+/* img:hover {
+
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  transition: 30ms;
+  -webkit-transform: scale(1.02);
+  filter: none;
+} */
+
+.project-name {
+  
+  background-color: black;
+  height: 2em;
+  color: var(--baby-powder);
+  text-align: center;
+  padding-top: .5em;
+  z-index: 1;
+  margin-bottom: 1px;
+
+}
+
+footer {
+  
+  background-color:var(--night);
+  height: 100px;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3em;
+}
+
+.Skills {
+  display: flex;
+  margin: 2em;
+  justify-content: center;
+  
+}
+
+.Tech {
+  margin-left: 3em;
+}
+
+.Finance {
+  margin-left: 3em;
+}
+
+.Languages {
+  margin-left: 3em;
+}
+
+h1, h2, h3 {
+  color: var(--verdigis);
+}
+
+.ulClass {
+  border: solid 2px var(--verdigis);
+  border-radius: 8px;
+  padding: 3em;
+  min-height: 70%;
+  width: 18em;
+  box-shadow: 0 0 .5rem 0.15rem  var(--verdigis);
+  
+  
+}
+
+.programmingLanguages {
+  border: none;
+  padding: none;
+}
+
+.jobTitle {
+  text-align: center;
+}
+
+.outsideSources {
+  display: flex;
+  flex-direction: row;
+}
+
+.markImage, .linkedIn {
+  width: 3em;
+  height: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-bottom: -1em;
+}
+
+.githubInfo, .LinkedInInfo {
+  /* border: 1px solid var(--english-violet); */
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  margin: 1em;
+}
+
+.footerIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+}
+
+.githubInfoFooter, .LinkedInInfoFooter {
+  /* border: 1px solid var(--english-violet); */
+  /* display: flex;*/
+  flex-direction: column; 
+  justify-content: center;  
+  color: white;
+}
+
+.markImageFooter, .linkedInFooter {
+  width: 3em;
+  height: 3em;
+  padding-left: 2em;
+  padding-right: 3em;
+  margin-bottom: -1em;
+  
+}
+
+.centeredStuff {
+  
+  margin: auto;
+}
+
+.block {
+  border: solid 2px var(--verdigis);
+  border-radius: 8px;
+  padding: 3em;
+  min-height: 70%;
+  /* width: 18em; */
+  box-shadow: 0 0 .5rem 0.15rem  var(--verdigis);
+  margin-bottom: 1em;
+}
+
+.footerStuff {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
