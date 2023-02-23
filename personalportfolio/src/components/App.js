@@ -8,6 +8,8 @@ import Project from './Project';
 import Footer from './Footer';
 import Handler from './Handler';
 import List from './List';
+import Contact from './Contact';
+import { BrowserRouter, NavLink } from 'react-router-dom';
 
 const App = () => {
 
@@ -26,6 +28,7 @@ const App = () => {
             return  <div className='content'>
                         {project.map(project => 
                         <Project 
+                        git = {project.git}
                         name= {project.name}
                         link= {project.link}
                         source = {project.source}
@@ -38,6 +41,9 @@ const App = () => {
 
         case('About'):            
             return <About /> 
+
+        case('Contact'):            
+            return <Contact />
         
 
         default:
@@ -47,15 +53,18 @@ const App = () => {
 }
 
   return (
-    <div className="app">
-    <Header
-      setPage = {setPage}
-    />
-    <Handler
-      page= {page} renderPage= { renderPage }
-    />    
-    <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="app">
+      <Header
+        setPage = {setPage}
+        NavLink={ NavLink}
+      />
+      <Handler
+        page= {page} renderPage= { renderPage }
+      />    
+      <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

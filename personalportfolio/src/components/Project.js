@@ -11,11 +11,15 @@ const Project = (props) => {
 
     return (
         <div className= "project-card">
+            <div className= "project-name"> { props.name }</div>
             
             {/* image of project here, and a link to page */}
             <a href= { props.link }><img src= { props.source } className="image" alt=""></img></a>
             {/* name of project here */}
-            <div className= "project-name"> { props.name }</div>
+            <a href= {props.git} className="gitLink"><p>github repo link</p></a>
+            
+            
+            
         </div>
 
     );

@@ -1,6 +1,7 @@
 import '../index.css';
 import Mark from '../assets/github-mark.png';
 import Linked from '../assets/LinkedIn.png';
+import Stack from '../assets/Stack.jpg';
 
 const Footer = () => {
     return (
@@ -14,6 +15,10 @@ const Footer = () => {
                 <div className='LinkedInInfoFooter'>
                 <a href="https://github.com/bornoflightning"><img src= { Linked } alt="GitHub" width="10" height="10" className='linkedInFooter'></img></a>
                 <p><a href="https://www.linkedin.com/in/archery-vic/"></a></p>
+                </div>
+                <div className='LinkedInInfoFooter'>
+                    <a href="https://stackoverflow.com/users/9051461/bornoflightning"><img src= { Stack } alt="GitHub" width="10" height="10" className='StackFooter'></img></a>
+                    <p><a href="https://www.linkedin.com/in/archery-vic/"></a></p>
                 </div>
             </div>            
         </footer>

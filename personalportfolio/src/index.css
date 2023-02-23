@@ -211,7 +211,7 @@ h1, h2, h3 {
   color: white;
 }
 
-.markImageFooter, .linkedInFooter {
+.markImageFooter, .linkedInFooter, .StackFooter {
   width: 3em;
   height: 3em;
   padding-left: 2em;
@@ -239,4 +239,52 @@ h1, h2, h3 {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    margin: 2em;
+    margin-bottom: 21em;
+}
+
+.selfie {
+  width: 20em;
+  height: 25em;
+  border-radius: 10px;
+  border: solid 3.5px var(--verdigis);
+  box-shadow: 0 0 1rem 0.15rem  var(--verdigis);
+  margin-right: 1em;
+  margin-bottom: 2em;
+  
+}
+
+.title {
+  padding-left: 1em;
+}
+
+.aboutText {
+  color: #44A1A0;
+}
+
+.blueLetters {
+  color: #44A1A0;
+}
+
+.icons {
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.gitLink {
+  color: white;
+  text-align: center;
+  margin: none;
+  margin-top: -0.5em;
+  margin-bottom: -0.5em;
+  margin-left: -.5em;
+  padding: none;
+}
+
+
 

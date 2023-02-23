@@ -4,6 +4,7 @@ import Resume from './Resume';
 import Project from './Project';
 import List from './List';
 import { renderPage } from './pageUtils';
+import { NavLink, BrowserRouter } from 'react-router-dom';
 
 
 const Handler = ({page, renderPage}) => {
@@ -17,6 +18,12 @@ const Handler = ({page, renderPage}) => {
     
         return <div>{ pageContent }</div>
 }
+
+const HandlerWithRouter = () => (
+    <BrowserRouter>
+      <Handler renderPage={renderPage} />
+    </BrowserRouter>
+  );
 
 
 export default Handler;
