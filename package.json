@@ -2,8 +2,8 @@
   "name": "personalportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bornoflightning.github.io",
-  // "homepage": "https://bornoflightning.github.io/personalportfolio",
+  "homepage": "https://bornoflightning.github.io/personalportfolio",
+  
 
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
