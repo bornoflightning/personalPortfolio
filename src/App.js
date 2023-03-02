@@ -1,14 +1,14 @@
 
 import React from 'react';
-import '../index.css';
-import Header from './Header';
-import About from './About';
-import Resume from './Resume';
-import Project from './Project';
-import Footer from './Footer';
-import Handler from './Handler';
-import List from './List';
-import Contact from './Contact';
+import './index.css';
+import Header from './components/Header';
+import About from './components/About';
+import Resume from './components/Resume';
+import Project from './components/Project';
+import Footer from './components/Footer';
+import Handler from './components/Handler';
+import List from './components/List';
+import Contact from './components/Contact';
 import { BrowserRouter, NavLink } from 'react-router-dom';
 
 const App = () => {
